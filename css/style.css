@@ -1,0 +1,183 @@
+/********************************
+Bootstrap Variables Override
+**********************************/
+:root {
+    /* Replace your primary color from your UI Kit */
+    --bs-primary: #432874;
+
+    /* Replace your secondary color from your UI Kit  */
+    --secondary-color: #6C757D;
+
+    --bs-primary-dark: #2C1A4D;
+
+    --bs-primary-light: #8C68CD;
+
+    /* Replace the main body font from your UI Kit */
+    --bs-font-sans-serif: 'Bebas Neue', sans-serif;
+}
+
+/********************************
+Global Styles and UI Components
+**********************************/
+.navbar {
+    /* Optional: Make the navbar background transparent */
+    background-color: var(--bs-primary);
+
+    /* Optional: Move the navbar is positioned over the hero */
+    position: absolute;
+
+    /* Optional: Stretch the navbar across the full width */
+    width: 100%;
+
+    /* Optional: Add inner spacing to the navbar */
+    padding: 1rem;
+    a {
+  color: white;
+  font-weight: bold;
+}
+}
+footer {
+    /* Change footer background color */
+    background-color: var(--bs-primary);
+    /* Optional: Change footer text color to white using variable */
+    color: var(--bs-white);
+    /* Optional: Center footer elements */
+    text-align: center;
+}
+
+footer .footer-social {
+    /* Optional: Change size of footer icon */
+    width: 24px;
+    margin: .5rem
+}
+
+.btn-primary {
+    /* Optional: Change primary button background color to primary color */
+    background-color: var(--bs-primary);
+    /* Optional: Remove primary button outline */
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+
+.btn-primary:hover {
+    /* Optional: Change primary button hover state background and text color  */
+    background-color: var(--secondary-color);
+    color: var(--bs-primary-dark);
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #432874;
+    color: var(--bs-white)
+}
+
+
+/********************************
+Typography
+**********************************/
+h1 {
+    /* Optional: Adjust font-size of heading 1 */
+    font-size: 8rem;
+}
+
+h2 {
+    /* Optional: Adjust font-size of heading 2 */
+    font-size: 4rem;
+}
+
+h3 {
+    /* Optional: Adjust font-size of heading 3 */
+    font-size: 1.75rem;
+}
+h4 {
+    /* Optional: Adjust font-size of heading 4 */
+    font-size: 1.5rem;
+}
+
+h5,
+h6
+
+.display-1 {
+    /* Optional: Customizes display-1 style based on my Figma UI kit */
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 100%;
+    letter-spacing: -0.2rem;
+}
+
+.display-2 {
+    /* Optional: Customizes display-2 style based on my Figma UI kit */
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: -0.2rem;
+}
+
+.p1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.5rem;
+}
+
+.p2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    /* Optional: Customize responsive style for display-1 on small devices and larger */
+    .display-1 {
+        font-size: 4rem;
+    }
+}
+
+/********************************
+Page-Specific
+**********************************/
+/* PAGE: Home */
+.hero.home {
+    /* Add a background image for the hero section */
+    background: url(/images/hero.png);
+
+    /* Adjust image size to cover the entire section */
+    background-size: cover;
+
+    /* Center the background image */
+    background-position: center;
+
+    /* Optional: Color text white */
+    color: var(--bs-white);
+
+    /* Optional: Add a full-height hero section */
+    height: 75vh;
+    /* Optional: Add necessary props to center the text in the middle of the hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/********************************
+Page-Specific
+**********************************/
+/* PAGE: Short Films */
+.hero.short-films {
+    /* Add a background image for the hero section */
+    background: url(/images/Rectangle\ 37\ \(1\).png);
+
+    /* Adjust image size to cover the entire section */
+    background-size: cover;
+
+    /* Center the background image */
+    background-position: center;
+
+    /* Optional: Color text white */
+    color: var(--bs-white);
+
+    /* Optional: Add a full-height hero section */
+    height: 75vh;
+    /* Optional: Add necessary props to center the text in the middle of the hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
